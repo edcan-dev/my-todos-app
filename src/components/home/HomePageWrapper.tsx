@@ -52,27 +52,27 @@ export const HomePageWrapper = () => {
       <section className="bg-zinc-900 flex justify-center p-2 bottom-0">
         {isClearModeOn ? (
           <button
-          className="flex items-center hover:bg-zinc-800 text-violet-300 hover:text-violet-500 p-2 rounded-lg transition-all ml-2"
+          className="flex items-center hover:bg-zinc-800 text-violet-300 hover:text-violet-500 p-2 rounded-lg transition-all"
           onClick={ () => handleClearToDos() }
         >
-          <span className="text-3xl mr-2">Clear ToDos</span>
+          <span className="text-2xl mr-2">Clear ToDos</span>
           <MdRemoveCircle size={60} />
         </button>
         ) : (
           <Link
             href={"/todos/create"}
-            className="flex items-center hover:bg-zinc-800 text-violet-300 hover:text-violet-500 p-2 rounded-lg transition-all mr-2"
+            className="flex items-center hover:bg-zinc-800 text-violet-300 hover:text-violet-500 p-2 rounded-lg transition-all"
           >
-            <span className="text-3xl mr-2 text-center">Create ToDo</span>
+            <span className="text-2xl mr-2 text-center">Create ToDo</span>
             <MdAddBox size={60} />
           </Link>
         )}
 
         <button
-          className="flex items-center hover:bg-zinc-800 text-violet-300 hover:text-violet-500 p-2 rounded-lg transition-all ml-2"
+          className="flex items-center hover:bg-zinc-800 text-violet-300 hover:text-violet-500 p-2 rounded-lg transition-all"
           onClick={ () => handleRemoveMode() }
         >
-          <span className="text-3xl mr-2">Remove ToDo</span>
+          <span className="text-2xl mr-2">Remove ToDo</span>
           <MdRemoveCircle size={60} />
         </button>
       </section>
